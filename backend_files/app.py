@@ -3,7 +3,7 @@ import pandas as pd
 from flask import Flask, request, jsonify
 
 # Initialize Flask app
-app = Flask("Superkart Sales Predictor")
+app= Flask("Superkart Sales Predictor")
 
 # Load the trained model
 model = joblib.load("superkart_model.joblib")

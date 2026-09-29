@@ -17,5 +17,5 @@ EXPOSE 7860
 # Serve the Flask app with gunicorn:
 #   -w 2             -> two worker processes
 #   -b 0.0.0.0:7860  -> listen on all interfaces so the port can be published / forwarded
-#   app:superkart_api -> <python file>:<Flask object>
-CMD ["gunicorn", "-w", "2", "-b", "0.0.0.0:7860", "app:superkart_api"]
+#   app:app -> <python file>:<Flask object>
+CMD ["gunicorn", "-w", "2", "-b", "0.0.0.0:7860", "app:app"]
